@@ -1527,3 +1527,30 @@ html {
 <section id="loja">
 <section id="ebooks">
 max-width: 760px;
+.Logo img {
+    animation: glowPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px rgba(212,175,55,0.6));
+}
+
+@keyframes glowPulse {
+    0% { filter: drop-shadow(0 0 4px rgba(212,175,55,0.4)); }
+    50% { filter: drop-shadow(0 0 12px rgba(212,175,55,0.9)); }
+    100% { filter: drop-shadow(0 0 4px rgba(212,175,55,0.4)); }
+}
+.hero-clean::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(212,175,55,0.15) 1px, transparent 1px);
+    background-size: 120px 120px;
+    animation: particlesMove 40s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes particlesMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(-120px); }
+}
+position: relative;
+overflow: hidden;
+<a href="contato.html">Contato</a>
