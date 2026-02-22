@@ -1371,3 +1371,7 @@ section:nth-child(even) {
     max-width: 150px;
     height: auto;
 }
+.Logo img {
+    height: 60px;
+    width: auto;
+}
